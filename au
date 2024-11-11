@@ -1,0 +1,12 @@
+import os
+
+def run_command(command):
+    if command == "open calculator":
+        os.system("calc")  # Esto es un ejemplo en Windows
+    elif command == "shutdown":
+        os.system("shutdown /s /t 1")
+    else:
+        return "Comando no reconocido."
+
+# Ejemplo de llamada al comando
+run_command("open calculator")
