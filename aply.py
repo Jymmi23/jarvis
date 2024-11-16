@@ -1,6 +1,5 @@
 from .aply import QtCore, QtWidgets  # type: ignore
-import sys 
-
+import sys # type:ignore 
 class JarvisInterface(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()

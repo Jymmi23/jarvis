@@ -1,6 +1,6 @@
-import whisper
-import sounddevice as sd
-from scipy.io.wavfile import write
+import whisper # type: ignore
+import sounddevice as sd # type: ignore
+from scipy.io.wavfile import write # type: ignore
 
 def record_audio(duration, fs=44100):
     print("Grabando...")
