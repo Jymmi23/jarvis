@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "../.git"
+		},
+		{
+			"path": "../.github"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../.pytest_cache"
+		},
+		{
+			"path": "../.vs"
+		},
+		{
+			"path": "../.vscode"
+		},
+		{
+			"path": "../__pycache__"
+		},
+		{
+			"path": "../host"
+		},
+		{
+			"path": "../shared"
+		}
+	]
+}

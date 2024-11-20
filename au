@@ -1,12 +1,34 @@
 import os
 
+import os
+
 def run_command(command):
+    """
+    Executes a system command based on the input command string.
+
+    :param command: A string representing the command to execute.
+    :return: A message indicating the result if the command is not recognized.
+    """
     if command == "open calculator":
-        os.system("calc")  # Esto es un ejemplo en Windows
+        # Open the calculator application (Windows example)
+        os.system("calc")
     elif command == "shutdown":
+        # Shut down the system immediately
         os.system("shutdown /s /t 1")
     else:
+        # Return a message for unrecognized commands
         return "Comando no reconocido."
+
+# Example calls to demonstrate the function
+run_command("open calculator")
+run_command("unknown command")
+run_command("open unknown")
 
 # Ejemplo de llamada al comando
 run_command("open calculator")
+
+# Ejemplo de llamada a un comando desconocido
+run_command("unknown command")
+
+# Ejemplo de llamada a un comando desconocido
+run_command("open unknown")             

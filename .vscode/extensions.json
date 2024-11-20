@@ -2,6 +2,12 @@
     "recommendations": [
         "dadroit.dadroit-json-generator",
         "akipg.debug-variable-actions-vscode",
-        "howardzuo.vscode-gitk"
+        "howardzuo.vscode-gitk",
+        "ms-dotnettools.vscode-dotnet-runtime",
+        "eamodio.gitlens",
+        "artificial.artificial-debug-extension",
+        "twxs.cmake"
     ]
-}
+}       
+
+    

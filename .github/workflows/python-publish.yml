@@ -36,4 +36,10 @@ jobs:
       uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
       with:
         user: __token__
-        password: ${{runner}}
+        password: ${{runner}}.token 
+
+# See https://github.com/pypa/gh-action-pypi-publish          
+# See https://github.com/actions/checkout
+# See https://github.com/actions/setup-python
+# See https://github.com/pypa/build
+# See https://github.com/pypa/gh-action-pypi-publish

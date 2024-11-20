@@ -20,4 +20,29 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        pylint $(git ls-files '*.py') --rcfile=.pylintrc    
+
+    - name: Commit files
+      run: |
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git commit -am "Automated commit" || echo "No changes to commit"    
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}        
+        branch: ${{ github.head_ref }}      
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "Automated commit"        
+        branch: ${{ github.head_ref }}        
+        title: "Automated commit"        
+        body: "Automated commit"        
+        labels: "automated"        
+        delete-branch: true        
+        draft: false        
+        base: "main"        
